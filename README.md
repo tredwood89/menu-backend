@@ -1,25 +1,35 @@
-# README
+# Menu - Service Side #
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Menu - Service Side is restaurant training tool. Here, newly hired team-members will be able
+to increase their menu knowledge to provide better guest experiences
+The features involed to facilitate that learing are :
 
-Things you may want to cover:
+  * **Full menu view with detailed information about each menu item**
+    Click on any menu item in the full view to see properties such as flavor profile, and allergens.
+  * **Flash chards with food, beverage, and food-safety study content**
+    Select a fash card subject then click through the cards for study material
+  * **Recommendation Station**
+    Enter guest preference and Recommendation Station selects menu items that meet those prefences
+  
+..* Menu Frontend repo:[https://github.com/tredwood89/menu-frontend]
+..* Menu Backend repo: [https://github.com/tredwood89/menu-Backend]
 
-* Ruby version
 
-* System dependencies
+## How to Use ##
 
-* Configuration
 
-* Database creation
+* Select one of the available menus to view menu knowledge tools
 
-* Database initialization
+* Select the link that cooresponds with the tool
 
-* How to run the test suite
+## Technical Points ##
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* **Frontend**: React. JS, Redux
+* **Styled**: Semantic UI  React and raw CSS
+* **Backend**: Ruby on Rails
 
-* ...
-# menu-backend
+## Demo ##
+
+[https://www.youtube.com/watch?v=B7Jrx9H3y0w]
+
