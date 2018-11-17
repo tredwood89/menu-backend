@@ -2,7 +2,7 @@ class ItemSerializer
   include FastJsonapi::ObjectSerializer
   attributes :id, :name, :description, :url, :ingredients
 
-   set_type :menu_item
+   set_type :category
   # has_many :allergens
   # belongs_to :menu
   # belongs_to :category

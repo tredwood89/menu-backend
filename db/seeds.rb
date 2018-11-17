@@ -25,7 +25,7 @@
 #  allergies.each {|a| Allergen.create(name: a)}
 # protiens.each {|pr| Protien.create(name: pr)}
 
-
+# Menu.create(name:"My Favorite Restaurant")
 
 # Item.create(
 #   name:"parm crusted chicken",
@@ -69,7 +69,6 @@
       #   category_id: 3,
       #   protien_id: 3,
       #   flavor_id: 1,
-
       #   )
 
 
@@ -120,11 +119,11 @@
   # fish = Allergen.find(7)
   #
   #       cal = Item.create(
-  #         name:"Crispy Calamari",
+  #         name:" Calamari",
   #         description:"Crispy, golden fried calamari rings. Served with a lemon",
   #         ingredients:"calamari",
   #         url:"https://d3cizcpymoenau.cloudfront.net/images/22212/SFS_fried_calamari_CLR-11.jpg",
-  #         menu_id: 1,
+  #         menu_id: 2,
   #         category_id: 1,
   #         protien_id: 5,
   #         flavor_id: 4,
@@ -203,23 +202,23 @@
   #                     flavor_id: 3,
   #                     )
   #
-  #                 zucc = Item.create(
-  #                       name:"Zucchini Fritter Gyros",
-  #                       description:"Crispy zucchini fritters get the gyro treatment with hummus and a lemony yogurt sauce.",
-  #                       ingredients:"zucchini, yogurt, garlic, tomato, lettuce, pita",
-  #                       url:"https://www.vegetariantimes.com/.image/t_share/MTQ3MDM4NTA3OTA1MzI4ODc5/gyros2_2000_1125.jpg",
-  #                       menu_id: 1,
-  #                       category_id: 2,
-  #                       protien_id: 3,
-  #                       flavor_id: 4,
-  #                       )
-  #                       zucc.allergens << diary
-  #
+                  # zucc = Item.create(
+                  #       name:"Zucchini  Gyros",
+                  #       description:"Crispy zucchini fritters get the gyro treatment with hummus and a lemony yogurt sauce.",
+                  #       ingredients:"zucchini, yogurt, garlic, tomato, lettuce, pita",
+                  #       url:"https://www.vegetariantimes.com/.image/t_share/MTQ3MDM4NTA3OTA1MzI4ODc5/gyros2_2000_1125.jpg",
+                  #       menu_id: 2,
+                  #       category_id: 2,
+                  #       protien_id: 3,
+                  #       flavor_id: 4,
+                  #       )
+                  #       zucc.allergens << diary
+
   #                     ramen = Item.create(
   #                         name:"Spicy Pork Ramen",
   #                         description:"Slow cooked pork with noodles, veggies and a just-slightly-runny egg",
   #                         ingredients:"pork shoulder, carrots, egg, noodles, spinach",
-  #                         url:"https://www.kitchensanctuary.com/wp-content/uploads/2016/07/Spicy-pork-ramen-noodle-soup-tall.jpg",
+  #                         url:"https://blog.williams-sonoma.com/pork-belly-shoyu-ramen-recipe/",
   #                         menu_id: 1,
   #                         category_id: 2,
   #                         protien_id: 4,
@@ -227,19 +226,22 @@
   #                         )
   #                         ramen.allergens << gluten
   #                         ramen.allergens << egg
+                          ramen = Item.find_by(name:"Spicy Pork Ramen")
+                          ramen.url = "https://homemaderecipes.com/wp-content/uploads/2017/01/15-Easy-Korean-Recipes-Perfect-For-Cold-Evening01-1.jpg"
+                          ramen.save
   #
-  #                       boil = Item.create(
-  #                           name:"Seafood Boil",
-  #                           description:"Classic seafood boil season with old bay and house spices",
-  #                           ingredients:"snow crab legs, shrimp, corn, roasted potato",
-  #                           url:"https://images.heb.com/is/image/HEBGrocery/rcp-homepage/new-england-style-crab-boil-recipe-1.jpg",
-  #                           menu_id: 1,
-  #                           category_id: 2,
-  #                           protien_id: 5,
-  #                           flavor_id: 3,
-  #                           )
-  #                           boil.allergens << shellfish
-  #
+                        # boil = Item.create(
+                        #     name:"Seafood Boil ",
+                        #     description:"Classic seafood boil season with old bay and house spices",
+                        #     ingredients:"snow crab legs, shrimp, corn, roasted potato",
+                        #     url:"https://images.heb.com/is/image/HEBGrocery/rcp-homepage/new-england-style-crab-boil-recipe-1.jpg",
+                        #     menu_id: 2,
+                        #     category_id: 2,
+                        #     protien_id: 5,
+                        #     flavor_id: 3,
+                        #     )
+                        #     boil.allergens << shellfish
+
   #                      molten = Item.create(
   #                           name:"Molten Lava Cake",
   #                           description:"Chocalate cake with fudge center; topped with vanilla icecream",
@@ -252,21 +254,24 @@
   #                           )
   #                           molten.allergens << nut
   #                           molten.allergens << gluten
+                        molten = Item.find_by(name:"Molten Lava Cake")
+                        molten.url = "https://www.kingarthurflour.com/item-img/3635_07_17_2012__10_58_38_456"
+                        molten.save
   #
-  #                       keylime = Item.create(
-  #                             name: "Key Lime Pie",
-  #                             description: "classic key lime pie; topped with whipped cream",
-  #                             ingredients: "grahm cracker, condensed milk, lime",
-  #                             url:"https://www.meals.com/imagesrecipes/28510lrg.jpg",
-  #                             menu_id: 1,
-  #                             category_id: 3,
-  #                             protien_id: 3,
-  #                             flavor_id: 5,
-  #                             )
-  #                             keylime.allergens << nut
-  #                             keylime.allergens << diary
-  #                             keylime.allergens << gluten
-  #
+                        # keylime = Item.create(
+                        #       name: "Key Lime Pie n Bye",
+                        #       description: "classic key lime pie; topped with whipped cream",
+                        #       ingredients: "grahm cracker, condensed milk, lime",
+                        #       url:"https://www.meals.com/imagesrecipes/28510lrg.jpg",
+                        #       menu_id: 2,
+                        #       category_id: 3,
+                        #       protien_id: 3,
+                        #       flavor_id: 5,
+                        #       )
+                        #       keylime.allergens << nut
+                        #       keylime.allergens << diary
+                        #       keylime.allergens << gluten
+
   #                         cheesecake = Item.create(
   #                               name:"NY Style Cheesecake",
   #                               description:"classic new york cheesecake; topped with strawberries",
@@ -291,7 +296,9 @@
   #                                 protien_id: 3,
   #                                 flavor_id: 1,
   #                                 )
-  #
+                                    cookie= Item.find_by(name:"Gluten Free Chocalate Chip Cookies")
+                                    cookie.url ="https://images-gmi-pmc.edge-generalmills.com/b9272720-c6bf-4288-92f7-43542067af7c.jpg"
+                                    cookie.save
   #                                 Item.create(
   #                                   name: "Old Fashioned Mashed Potatoes",
   #                                   description:"buttery mashed potatoes",
@@ -303,17 +310,20 @@
   #                                   flavor_id: 3,
   #                                   )
   #
-  #                                   Item.create(
-  #                                     name:"Steammed Asparagus",
-  #                                     description:"steamed asparagus",
-  #                                     ingredients:"asparagus",
-  #                                     url:"https://cookingwithcurls.com/wp-content/uploads/2017/05/This-Instant-Pot-Steamed-Asparagus-could-not-be-any-easier-to-cook-its-ready-in-minutes-cookingwithcurls.com_.jpg",
-  #                                     menu_id: 1,
-  #                                     category_id: 4,
-  #                                     protien_id: 3,
-  #                                     flavor_id: 4,
-  #                                     )
-  #                                   loadedPot =  Item.create(
+                                    # Item.create(
+                                    #   name:"Asparagus",
+                                    #   description:"steamed asparagus",
+                                    #   ingredients:"asparagus",
+                                    #   url:"https://cookingwithcurls.com/wp-content/uploads/2017/05/This-Instant-Pot-Steamed-Asparagus-could-not-be-any-easier-to-cook-its-ready-in-minutes-cookingwithcurls.com_.jpg",
+                                    #   menu_id: 2,
+                                    #   category_id: 4,
+                                    #   protien_id: 3,
+                                    #   flavor_id: 4,
+                                    #   )
+                                    asp = Item.find_by(name:"Asparagus")
+                                    asp.url = "http://www.melaniecooks.com/wp-content/uploads/2014/02/microwave-asparagus2.jpg"
+                                    asp.save
+                                        # loadedPot =  Item.create(
   #                                       name:"Loaded Baked Potato",
   #                                       description:"baked potato; topped with bacon, cheese, and sourcream",
   #                                       ingredients:"potato, bacon, cheese",
@@ -324,13 +334,15 @@
   #                                       flavor_id: 3,
   #                                       )
   #                                       loadedPot.allergens << diary
-  #
+                                        baked = Item.find_by(name:"Loaded Baked Potato")
+                                        baked.url = "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/10/8/0/fnk_baked-potato_s4x3.jpg.rend.hgtvcom.616.462.suffix/1383780369940.jpeg"
+                                        baked.save
   #                                       Item.create(
   #                                         name:"French Fries",
   #                                         description:"crispy golden fries",
   #                                         ingredients:"french fries",
   #                                         url:"http://www.manathota.in/mandapeta/wp-content/uploads/2017/11/french-fries-87711-1.jpeg",
-  #                                         menu_id: 1,
+  #                                         menu_id: 2,
   #                                         category_id: 4,
   #                                         protien_id: 3,
   #                                         flavor_id: 3,
@@ -346,6 +358,9 @@
   #                                           protien_id: 3,
   #                                           flavor_id: 3,
   #                                           )
+                                              spin = Item.find_by(name:"Garlic Spinach")
+                                              spin.url = "https://healthyrecipesblogs.com/wp-content/uploads/2013/04/sauteed-spinach1.jpg"
+                                              spin.save
   #
   #                                       lobster = Item.create(
   #                                             name:"Roasted Lobster Tail",
@@ -381,6 +396,9 @@
   #                                                 protien_id: 3,
   #                                                 flavor_id: 4,
   #                                                 )
+                                                    sal = Item.find_by(name:"Side Salad")
+                                                    sal.url = "https://news.crackerbarrel.com/-/media/CrackerBarrel/Menu/Dinner/Vegetables-n-Sides/Mixed_Green_Salad_Veg_N_Sides-H_780x390.jpg?h=390&w=780&la=en&hash=69C815C0D6A6A9C8774F950ADD176F25A70FE964"
+                                                    sal.save
   #
   #                                                 Item.create(
   #                                                   name:"Parmesan Truffle Fries",

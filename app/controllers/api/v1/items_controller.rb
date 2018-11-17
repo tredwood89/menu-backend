@@ -1,3 +1,4 @@
+
 class Api::V1::ItemsController < ApplicationController
 
   def index
@@ -6,5 +7,7 @@ class Api::V1::ItemsController < ApplicationController
     # render json: @items
 
   end
+
+
 
 end
