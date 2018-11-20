@@ -11,23 +11,22 @@ The features involed to facilitate that learing are :
   * **Recommendation Station**
     Enter guest preference and Recommendation Station selects menu items that meet those prefences
   
-..* Menu Frontend repo:[https://github.com/tredwood89/menu-frontend]
-..* Menu Backend repo: [https://github.com/tredwood89/menu-Backend]
+- Menu Frontend repo:[https://github.com/tredwood89/menu-frontend]
+- Menu Backend repo: [https://github.com/tredwood89/menu-Backend]
 
 
 ## How to Use ##
 
+ -  Select one of the available menus to view menu knowledge tools
 
-* Select one of the available menus to view menu knowledge tools
-
-* Select the link that cooresponds with the tool
+ -  Select the link that cooresponds with the tool
 
 ## Technical Points ##
 
 
-* **Frontend**: React. JS, Redux
-* **Styled**: Semantic UI  React and raw CSS
-* **Backend**: Ruby on Rails
+ -  **Frontend**: React. JS, Redux
+ -  **Styled**: Semantic UI  React and raw CSS
+ -  **Backend**: Ruby on Rails
 
 ## Demo ##
 
